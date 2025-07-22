@@ -1,73 +1,65 @@
-# **News Today**
+# 📰 News Today - All-in-One News Dashboard
 
 
 
-## 📰 Project Overview
+## 📋 Project Overview
 
-**News Today** is a dynamic, real-time news application that consolidates top headlines, current weather updates, and stock market data into a single dashboard. Designed for convenience and built for performance, this app brings the world’s updates to your fingertips.
+**News Today** is a dynamic and responsive news dashboard that brings together real-time top headlines, weather updates, and stock market data in one convenient interface. Built with ReactJS, it leverages various public APIs to ensure live, category-wise updates for users.
 
 ---
 
 ## ✨ Features
 
-- 🗞️ Real-time news across major categories
-- 🌦️ Live weather information by location
-- 📈 Stock market data for selected companies
-- 🔎 Search functionality for customized queries
-- 💻 Responsive and clean dashboard layout
+* 🗞️ Top news headlines fetched from major news APIs
+* 🌦️ Live weather updates based on geolocation or search
+* 📈 Real-time stock market insights
+* 🔍 Category-based browsing: Sports, Tech, Health, etc.
+* 📱 Responsive design for mobile and desktop
+* 🔄 Auto-refreshing data with minimal lag
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: ReactJS, HTML, CSS  
-- **APIs**: News API, OpenWeatherMap API, Financial Market API  
-- **Tools**: Axios, React Hooks, React Icons
+| Layer    | Technology                             |
+| -------- | -------------------------------------- |
+| Frontend | ReactJS                                |
+| Styling  | CSS / Tailwind CSS                     |
+| APIs     | NewsAPI, OpenWeatherMap, Alpha Vantage |
+| State    | React Hooks / Context                  |
 
 ---
 
-## 🚀 Installation and Setup
+## 🚀 Getting Started
 
-### Prerequisites
+### 1. Clone the Repository
 
-- Node.js and npm installed
-- An API key for each service (News, Weather, Stocks)
+```bash
+git clone https://github.com/your-username/news-today.git
+cd news-today
+```
 
-### Steps
+### 2. Install Dependencies
 
-1. **Clone the Repository**  
-   ```bash
-   git clone https://github.com/your-username/news-today.git
-   cd news-today
+```bash
+npm install
+```
 
-2. **Install Dependencies**
+### 3. Add Your API Keys
 
-   ```bash
-   npm install
-   ```
+Create a `.env` file in the root and add:
 
-3. **Configure Environment Variables**
-   Create a `.env` file in the root directory:
+```
+REACT_APP_NEWS_API=your_api_key
+REACT_APP_WEATHER_API=your_api_key
+REACT_APP_STOCK_API=your_api_key
+```
 
-   ```
-   REACT_APP_NEWS_API_KEY=your_news_api_key
-   REACT_APP_WEATHER_API_KEY=your_weather_api_key
-   REACT_APP_STOCK_API_KEY=your_stock_api_key
-   ```
+### 4. Start the App
 
-4. **Run the App**
-
-   ```bash
-   npm start
-   ```
-
----
-
-## 📌 Usage
-
-1. Launch the app on `http://localhost:3000`
-2. Browse through headlines, check live weather, and view market trends
-3. Use search to get news by keyword or location
+```bash
+npm start
+```
 
 ---
 
@@ -77,13 +69,31 @@
 news-today/
 │
 ├── public/
+|   ├── .ico files
 │   └── index.html
 ├── src/
 │   ├── components/
-│   ├── api/
+|      ├── NavBar.css
+|      ├── NavBar.js
+|      ├── News Today Design.png
+|      ├── News.css
+|      ├── News.js
+|      ├── Newsltem.css
+|      ├── Newsltems.js
+|      ├── Stocks.js
+|      ├── TopNews.css
+|      ├── TopNews.js
+|      ├── Weather.js
+|      ├── logo.jpg
+|      └── top.png
 │   ├── App.js
+│   ├── App.css
+│   ├── App.test.js
 │   ├── index.js
-│   └── styles/
+│   ├── index.css
+│   ├── reportWebVitals.js
+│   ├── setupTests.js
+│   └── logo.svg
 ├── .env
 ├── package.json
 └── README.md
@@ -91,36 +101,12 @@ news-today/
 
 ---
 
-## 📦 Dependencies
+## 🧠 Learning Outcomes
 
-* `React` — for building the UI
-* `Axios` — for making API calls
-* `React Icons` — for lightweight icons
-* `dotenv` — for managing API keys
-
----
-
-## 🧩 Customization
-
-* 🌍 Change default news category or region in `App.js`
-* 📊 Customize which stock tickers to display
-* 🎨 Update styles via `styles/` folder for your own theme
-
----
-
-## 🐞 Known Issues
-
-* APIs may limit free usage without proper plans
-* Inconsistent API data format across providers may require adjustments
-
----
-
-## 🚧 Future Improvements
-
-* Add user authentication to save preferences
-* Enable light/dark theme toggle
-* Support for multiple stock indexes
-* Progressive Web App (PWA) support
+* Improved ReactJS component architecture
+* Hands-on experience with REST APIs and async data fetching
+* Skill development in API key management and data formatting
+* Better UI/UX design thinking with real-world data
 
 ---
 
@@ -132,7 +118,6 @@ Licensed under the **MIT License**.
 
 ## 🙌 Acknowledgments
 
-* [NewsAPI.org](https://newsapi.org/)
-* [OpenWeatherMap](https://openweathermap.org/)
-* [Financial Modeling Prep](https://financialmodelingprep.com/)
-* React community for guidance and support
+* [NewsAPI](https://newsapi.org/) for headline data
+* [OpenWeatherMap](https://openweathermap.org/) for weather updates
+* [Alpha Vantage](https://www.alphavantage.co/) for stock market data
