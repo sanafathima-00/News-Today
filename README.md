@@ -1,6 +1,6 @@
 # **News Today**
 
----
+
 
 ## 📰 Project Overview
 
@@ -39,7 +39,6 @@
    ```bash
    git clone https://github.com/your-username/news-today.git
    cd news-today
-````
 
 2. **Install Dependencies**
 
